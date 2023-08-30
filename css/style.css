@@ -351,16 +351,16 @@ input[type='date'] {
     position: relative;
     justify-content: space-between;
   }
-  /* .output-container {
+  .output-container {
     margin-left: 17px;
     width: 320px;
     height: 300px;
     border: 1px solid rgb(206,212,218);
     position: relative;
-    bottom: 65px;
+    bottom: -165px;
     border-radius: 40px;
     background-color:rgb(226,237,255);
-  } */
+  }
   #sec5 .output-container .output {
     display: flex;
     flex-direction: column;
