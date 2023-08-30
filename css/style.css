@@ -296,13 +296,13 @@ input[type='date'] {
 }
 
 /* Responsif Mobile */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 98.9vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background-color: rgba(247, 242, 242, 0.3);
   }
 
@@ -313,7 +313,7 @@ input[type='date'] {
     position: fixed;
     color: white;
     width: 100%;
-    height: 6.5vh;
+    height: auto;
     background-color: rgb(13, 110, 253);
     border-bottom: 1px solid #9b9b9b;
     z-index: 9999;
@@ -322,13 +322,17 @@ input[type='date'] {
   header nav {
     display: flex;
     justify-content: center;
+    position: relative;
+    left: -70px;
   }
   
   header nav ul li {
+    position: relative;
     padding-right: 10px;
   }
 
   header nav ul li a {
+    white-space: nowrap;
     font-size: 12px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -336,7 +340,6 @@ input[type='date'] {
   }
 
   header nav .menu-container {
-    margin-left: 1.25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -350,7 +353,7 @@ input[type='date'] {
   }
   .output-container {
     margin-left: 17px;
-    width: 350px;
+    width: 320px;
     height: 300px;
     border: 1px solid rgb(206,212,218);
     position: relative;
@@ -367,12 +370,16 @@ input[type='date'] {
     margin-left: 20px;
   }
 
+
+  .titlesec4 {
+    position: relative;
+    left: -10px;
+  }
   .form {
     padding: 20px 0;
     width: 500px;
     display: flex;
     flex-direction: column;
-  
     padding-left: 15px;
   }
 
@@ -380,7 +387,7 @@ input[type='date'] {
     border: 1px solid rgb(206, 212, 218);
     border-radius: 4px;
     padding: 7px 0;
-    width: 350px;
+    width: 320px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -392,7 +399,7 @@ input[type='date'] {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   
   #home .textTitle {
@@ -429,4 +436,9 @@ input[type='date'] {
     justify-content: center;
     padding-right: 10px;
   } 
+
+  .container {
+    width: 100%;
+    height:auto;
+  }
 }
