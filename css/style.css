@@ -440,5 +440,6 @@ input[type='date'] {
   .container {
     width: 100%;
     height:auto;
+    overflow: hidden;
   }
 }
