@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 98.9vw;
+  width: 98.5vw;
   height: 550vh;
   background-color: rgba(247, 242, 242, 0.3);
 }
@@ -281,20 +281,15 @@ input[type='date'] {
 
 
 .created-container {
-  margin-top: 100px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
-
-.created { 
-  position: absolute;
-  z-index: 99;
-  color: white;
+.created {
   font-family: 'REM', sans-serif;
 }
-
 /* Responsif Mobile */
 @media (min-width: 320px) and (max-width: 768px) {
   body {
@@ -444,6 +439,16 @@ input[type='date'] {
   }
   footer #svg4 {
     position: relative;
-    bottom: -140px;
+    bottom: -10px;
+    z-index: 99;
   }
+  
+
+.created { 
+  position: absolute;
+  bottom:-20px;
+  z-index: 99;
+  color: white;
+  font-family: 'REM', sans-serif;
+}
 }
