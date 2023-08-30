@@ -357,7 +357,7 @@ input[type='date'] {
     height: 300px;
     border: 1px solid rgb(206,212,218);
     position: relative;
-    bottom: -165px;
+    bottom: -500px;
     border-radius: 40px;
     background-color:rgb(226,237,255);
   }
